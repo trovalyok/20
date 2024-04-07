@@ -101,5 +101,6 @@ english_students = session.query(Student)\
 
 english_students_names = [student.name for student in english_students]
 print("Students who visited 'English' classes:", english_students_names)
+# Bae and Lily
 
 session.close()
