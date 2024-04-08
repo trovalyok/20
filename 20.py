@@ -82,15 +82,16 @@ student_subject_data = [
 for data in students_data:
     student = Student(**data)
     session.add(student)
+session.commit()
 
 for data in subjects_data:
     subject = Subject(**data)
     session.add(subject)
+session.commit()
 
 for data in student_subject_data:
     student_subject = Student_subject(**data)
     session.add(student_subject)
-
 session.commit()
 
 english_students = session.query(Student)\
